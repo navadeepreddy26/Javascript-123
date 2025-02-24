@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        //const titles = ["sainath", "rahul", "sai"];
+        //for (let i = 0; i < titles.length; i++) {
+           // let title = document.createElement('h1'); 
+            //title.className = "a"; 
+            //title.textContent = titles[i]; 
+           // console.log(title); 
+        //}
+        <div id="a">
+            <h1>ramya</h1>
+            <h1>sai</h1>
+        </div>
+        <div id="b">
+            <h1>riya</h1>
+            <h1>pavan</h1>
+        </div>
+        <script>
+           let n=document.createElement("h2")
+            n.textContent="sai is team lead"
+            //parent element
+            let p=document.getElementById("b")
+            //append the newelement to parent node
+            p.appendChild(n)
+            console.log(p.innerText)
+        </script>
+</body>
+</html>
+30-01-2025 09:34 
+Ex:
+Let title
+For(let i=0;i<3;i++){
+Title=document.createElement('h2')
+Title.className="tt"
+Title.textContent=I
+Console.log(title)
+}
+To create multiple elements:
+Const titles=["sainath","rahul","sai"]
+For(let i=0;i<titles.length;i++){
+Let title=document.createElement('h1');
+Title.className="a"
+Title.textContent=titles[i]
+Console.log(title)
+}
