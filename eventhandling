@@ -1,0 +1,52 @@
+Event handling in react :
+It is how u make your app to do some activity when the user interacts with it,like clicking a button(on click),submittingg a form,moving the mouse,
+How to use events in react:
+--use camelcase for event names
+--pass a function to event .this function will run when thr event happens 
+a)onclick:
+
+function App(){
+    const handleClick =()=>{
+        alert("Button Clicked")
+    };
+    return(
+        <button onClick={handleClick}> click me</button>
+    )
+}
+export default App;
+b)change event(onchange):this happens when u type in a textbox
+Keypoints:
+Target is a property of the event object,& is predefined by javascript for dom events 
+Event target:always refers the element that triggered the event 
+
+import React ,{useState}from 'react';
+function App(){
+    const[text,setText]=useState("")
+    const handleChange=(event)=>{
+        setText(event.target.value)
+    }
+    return(
+        <div>
+            <input type="text" value={text} onChange={handleChange}/>
+        <p>your text:{text}</p>
+        </div>
+    )
+    
+}
+export default App;
+
+import React ,{useState}from 'react';
+function App(){
+    const[ishovered ,setIshovered]=useState(false);
+    const handleMouseEnter=()=>{
+        setIshovered(true);
+    }
+    const handleMouseLeave=()=>{
+
+    }
+    };
+    return{
+        <div>
+        <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+        style={{backgroundColor:"ishovered ?'lightblue'}}
+    }
