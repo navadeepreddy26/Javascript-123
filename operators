@@ -1,0 +1,101 @@
+JavaScript operators
+Arithmetic operators: +,-,,/,%,*,++,--
+Ex:
+
+	Ø let a=5
+        let b=2
+        document.write(a*b ,"<br>")
+        document.write(a**b ,"<br>")
+        document.write(a/b ,"<br>")
+        document.write(a%b)
+Output:
+10
+25
+2.5
+1
+
+Assignment operator: +=,-=,/=,%=
+EX:
+	Ø  let a=5
+        let b=2
+        a+=40
+        b-=5
+        //a++
+        //b--
+        document.write(a ,"<br>")
+        document.write(b ,"<br>")
+        document.write(a*b ,"<br>")
+        document.write(a**b ,"<br>")
+        document.write(a/b ,"<br>")
+        document.write(a%b)
+
+Output:
+45
+-3
+-135
+0.000010973936899862824
+-15
+0
+
+Logical operators: 
+	and -&&
+	Or=||
+	Not-!
+	T/F-F
+	T/T-T
+EX:
+
+let a=5
+        let b=2
+        document.write(a>b && a>2 ,"<br>")
+        document.write(a>b && a>12 ,"<br>")
+        document.write(a>b || a>12 ,"<br>")
+        document.write(!(a>12) ,"<br>")
+Output:
+true
+false
+true
+True
+
+Relational operators: <,>,>=,<=,==,===,!=,!==
+EX:
+
+	Ø let a=5
+        let b=5
+        document.write(a==b ,"<br>")
+        document.write(a!=b ,"<br>")
+        document.write(a==b ,"<br>")
+        document.write(a!==b ,"<br>")
+Output:
+
+true
+false
+true
+false
+
+Conditional operator: 
+
+	Ø   let t=40
+        let r=(t>40)?Ac-off: Ac-on
+        document.write(r , "<br>")
+
+Output:
+Ac-on
+
+
+Alert:
+	Ø alert("Rishi")
+       document.write(alert)
+
+Prompt:
+	Ø a=prompt("enter your name")
+       alert(a)
+	
+	Ø let aa=prompt("enter your name")
+	       alert(my name is :${aa})
+	
+	Ø let a1=prompt()
+	        document.write(a1 ,"<br>")
+	        document.write(typeof(a1),"<br>")
+	        let a2=promt()
+	        document.write(a1+a2 ,"<br>")
