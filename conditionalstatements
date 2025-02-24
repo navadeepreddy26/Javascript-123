@@ -1,0 +1,72 @@
+Call back functions:
+U can pass the callback function as a argument to another function
+Execution: the function receiving the callback will execute to the callback at some point during execution 
+Example:
+Function mainfunction(callback){
+Console.log("executing main function");
+Callback()
+//here we call the callback function
+}
+Function callbackFunction(){
+Console.log("callback Function executed")
+}
+mainfunction(callbackfunction);
+Exp:
+Mainfunction takes a parameter callback
+Callbackfunction is passed as an argument to mainfunction inside the mainfunction,the callback function
+--output:
+Mainfunction(callbackfunction);
+It will execute the code inside the mainfunction-it will print ("Executing main function");
+Then it reaches to the callback();where it call the function which is passed to maintain  
+Example:2
+Passing a named function as calback;
+function greet(name ,callback){
+Console.log("hello"+name);
+Callback();
+}
+function goodboy(){
+Console.log("goodboy!")
+}
+Greet("pavani",goodbye);
+Example:3
+ using Anonymous function as callback:
+-->function(error, data) {
+    if (error) {
+                console.log(error);
+    } else {
+                console.log(data);
+    }
+}
+
+-->function greet(name ,callback){
+Console.log("hello"+name);
+Callback();
+}
+Greet("pavani",function(){
+Console.log("goodbye")
+});///anonymous function as callback
+Ex:4 Asynchronous  callback with setTimeout
+Function fetchData(callback){
+Console.log("Fetching Data…")
+Console.log("Data fetched");
+Callback();
+},2000);
+}
+
+Function processData(){
+Console.log("processing the fetched data…")
+}
+fetchData("processData");
+Ex:map() is a built in array method that callback function to process each item in array
+The callback here doubles each number (num*2
+Ex:
+Function registeruser(username,email,callback){
+Console.log("registering user" +username);
+setTimeout(function(){
+Console.log("user"+username+"registered sucessfully");
+},2000);
+}
+Function sendWelcomeEmail(email){
+Console.log("sending welcome email to"+email);
+};
+User("harshith","harshith123@gmail.com,sendwelcomeemail);
